@@ -9,8 +9,8 @@
   
   for (var i = 0; i < img.length; i++) {
     var thumb = img[i];
-    console.warn(thumb);
-    thumb.onclick = function(){
+    thumb.onclick = function(event ){
+      event.preventDefault()
       modal.style.display = "block";
       modalImg.src = this.src;
       captionText.innerHTML = this.alt;
@@ -24,4 +24,10 @@
   span.onclick = function() { 
     modal.style.display = "none";
   }
+  modal.onmousedown = function() {
+    if(!$(modalImg).is(":hover")){
+      modal.style.display = "none";
+    }
+  }
+
   }

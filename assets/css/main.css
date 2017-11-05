@@ -1499,7 +1499,12 @@
 
 			#nav {
 				text-align: center;
-				margin: 6px 0 8px 0;
+				position: fixed; /* Set the navbar to fixed position */
+				top: 0;
+				background: #E9AF9F;
+				padding: 1%;
+				width: 100%;
+				z-index: 1;
 			}
 
 				#nav a {
