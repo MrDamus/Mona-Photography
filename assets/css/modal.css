@@ -78,6 +78,53 @@
   cursor: pointer;
 }
 
+/* Arrows Wrapper */
+#arrowsWrapper {
+  position: absolute;
+  top: 10%;
+  bottom: 35%;
+  right: 21%;
+  left: 21%;
+  display: flex;
+  align-items: center;  
+}
+/* The Previous Button */
+.prev {
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex: 1;
+  align-items: center;
+}
+.prev:hover,
+.prev:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* The Next Button */
+.next {
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+  align-items: center;
+}
+.next:hover,
+.next:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
   .modal-content {
