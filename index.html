@@ -117,6 +117,35 @@
 									</div>
 								</section>
 							</article>
+
+						<!-- Contact -->
+							<article id="contact" class="panel">
+								<header>
+									<h2>Wyślij wiadomość</h2>
+								</header>
+								<form action="mailto:Minia.ja@interia.pl?subject=Praca" method="post" >
+									<div>
+										<div class="row">
+											<div class="6u 12u$(mobile)">
+												<input type="text" name="name" placeholder="Imie" />
+											</div>
+											<div class="6u$ 12u$(mobile)">
+												<input type="text" name="email" placeholder="Email" />
+											</div>
+											<div class="12u$">
+												<input type="text" name="subject" placeholder="Temat" />
+											</div>
+											<div class="12u$">
+												<textarea name="message" placeholder="Twoja wiadomość" rows="8"></textarea>
+											</div>
+											<div class="12u$">
+												<input type="submit" value="Wyślij" />
+											</div>
+										</div>
+									</div>
+								</form>
+							</article>
+
 					</div>
 
 				<!-- Footer -->
@@ -139,19 +168,16 @@
 
 		<!-- The Modal -->
 			<div id="myModal" class="modal">
+		
+			<!-- The Close Button -->
+			<span class="close">&times;</span>
+		
+			<!-- Modal Content (The Image) -->
+			<img class="modal-content" id="img01">
+		
+			<!-- Modal Caption (Image Text) -->
+			<div id="caption"></div>
 
-				<!-- The Close Button -->
-				<span class="close">&times;</span>
-
-				<!-- Modal Content (The Image) -->
-				<img class="modal-content" id="img01">
-				<div id="arrowsWrapper">
-					<a class="prev" >&#10094;</a>
-					<a class="next" >&#10095;</a>
-				</div>
-			
-				<!-- Modal Caption (Image Text) -->
-				<div id="caption"></div>
 		</div>
 	</body>
 </html>
