@@ -12,18 +12,18 @@
     const prevButton = $(".prev");
     const nextButton = $(".next");
 
-    let currentIndex = null;
+    let currentIndex = 0;
 
     function selectImageByIndex(index){
-      if (index <= 0){
-        currentIndex = imgArray.length -1;
+      if (index < 0){
+        currentIndex = imgArray.length - 1;
       }
       else if (index >= imgArray.length -1){
-        currentIndex = 0;
+        currentIndex = 0;        
       } else {
         currentIndex = index;
       }
-      modalImg.src = imgArray[index];
+      modalImg.src = imgArray[currentIndex];
       modal.style.display = "block";
     }
 
@@ -34,8 +34,6 @@
     $('.next').on('click' ,() => {
       selectImageByIndex(currentIndex + 1)
     })
-
-  console.warn(imgArray);
   
   for (var i = 0; i < img.length; i++) {
     var thumb = img[i];
