@@ -1404,19 +1404,27 @@
 
 					#me header > h1 {
 						position: absolute;
-						left: 0;
-						bottom: 52.5%;
+						left: 29%;
+						bottom: 18%;
 						margin: 0;
 					}
 
 					#me header > p {
 						position: absolute;
-						left: 0;
-						top: 52.5%;
+						left: 46%;
+						top: 85%;
 						font-size: 1.5em;
 						letter-spacing: -0.015em;
 						margin-top: 0;
 					}
+					#logo {
+					}
+			
+					#logo img {
+						width: 55%;
+						margin: 10px auto;				
+					}
+			
 
 		/* Footer */
 
@@ -1529,6 +1537,7 @@
 
 			#main {
 				background: none;
+				margin-top: 20px;
 			}
 
 			.panel {
@@ -1545,7 +1554,8 @@
 		/* Me */
 
 			#me .pic {
-				width: 100%;
+				width: 70%;
+				margin: 0 auto;
 			}
 
 				#me .pic img {
@@ -1568,6 +1578,10 @@
 
 				#me header > p {
 					font-size: 1.25em;
+				}
+				#logo img {
+					width: 50%;
+					margin-top: 10px;
 				}
 
 		/* Footer */
