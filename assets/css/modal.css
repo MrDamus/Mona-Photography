@@ -12,7 +12,7 @@
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 10%; /* Location of the box */
+  padding-top: 6%; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -25,9 +25,10 @@
 /* Modal Content (Image) */
 .modal-content {
   margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
+  display: flex;
+  flex: 1;
+  height: inherit;
+  object-fit: contain;
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
@@ -69,6 +70,7 @@
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;
+  z-index: 10;
 }
 
 .close:hover,
@@ -81,12 +83,12 @@
 /* Arrows Wrapper */
 #arrowsWrapper {
   position: absolute;
-  top: 6%;
   right: 0;
-  height: 31%;
   left: 0;
   display: flex;
-  align-items: center;  
+  align-items: center;
+  width: 90%;
+  height: 90%;
 }
 /* The Previous Button */
 .prev {
@@ -99,6 +101,11 @@
   justify-content: flex-start;
   flex: 1;
   align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 10px;
+  right: 50%;
 }
 .prev:hover,
 .prev:focus {
@@ -117,6 +124,11 @@
   justify-content: flex-end;
   flex: 1;
   align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 10px;
+  left: 50%;
 }
 .next:hover,
 .next:focus {
@@ -128,12 +140,7 @@
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
   .modal-content {
-      width: 75%;
+      width: 90%;
+      height: 95%
   }
 }
-
-@media only screen and (max-width: 736px) and (orientation: landscape) {
-  .arrowWrapper {
-      top: 17%;
-      height: 100%;
-  }
