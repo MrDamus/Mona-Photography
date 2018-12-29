@@ -243,6 +243,7 @@
     flex-direction: column;
     justify-content: space-between;
 		align-items: center;
+		margin-top: 8vh;
 		
 	 img {
 		display: flex;
@@ -770,7 +771,7 @@
 				position: fixed; /* Set the navbar to fixed position */
 				top: 0;
 				background: #E9AF9F;
-				padding: 3%;
+				padding: 2%;
 				width: 100%;
 				z-index: 1;
 
@@ -798,7 +799,6 @@
 
 			#main {
 				background: none;
-				height: 400px;
 			}
 
 			.panel {

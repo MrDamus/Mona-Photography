@@ -856,6 +856,7 @@ header > p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 8vh;
 }
 
 #logo img {
@@ -1350,7 +1351,7 @@ ol.default li {
     /* Set the navbar to fixed position */
     top: 0;
     background: #E9AF9F;
-    padding: 3%;
+    padding: 2%;
     width: 100%;
     z-index: 1;
   }
@@ -1372,7 +1373,6 @@ ol.default li {
   /* Panels */
   #main {
     background: none;
-    height: 400px;
   }
   .panel {
     padding: 15px 15px 15px 15px;
