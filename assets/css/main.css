@@ -839,11 +839,35 @@ header > p {
   width: auto;
 }
 
+#logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 #logo img {
-  position: absolute;
-  left: 2%;
-  width: 45%;
-  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  max-width: 300px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 /* Button */
@@ -1188,16 +1212,17 @@ ol.default li {
   }
   /* Me */
   #me {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     padding: 0;
     height: 20em;
   }
   #me .pic {
-    display: block;
-    position: absolute;
-    right: -1px;
-    top: 0;
-    height: 100%;
-    text-decoration: none;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    max-width: 300px;
   }
   #me .pic img {
     position: relative;
@@ -1236,26 +1261,30 @@ ol.default li {
     padding-right: 0.25em;
   }
   #me header {
-    position: relative;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    margin-left: 2.5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: -webkit-fill-available;
   }
   #me header > h1 {
-    position: absolute;
-    left: 9%;
-    bottom: 35%;
-    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
   #me header > p {
-    position: absolute;
-    left: 18%;
-    top: 70%;
-    font-size: 1.5em;
-    letter-spacing: -0.015em;
-    margin-top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
   /* Footer */
   #footer {
@@ -1343,6 +1372,7 @@ ol.default li {
   /* Panels */
   #main {
     background: none;
+    height: 400px;
   }
   .panel {
     padding: 15px 15px 15px 15px;
