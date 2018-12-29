@@ -27,7 +27,7 @@
   margin: auto;
   display: flex;
   flex: 1;
-  height: inherit;
+  height: 85%;
   object-fit: contain;
 }
 

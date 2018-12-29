@@ -755,6 +755,10 @@
 		color: #777777;
 	}
 
+	body p {
+		color: #363636;
+	}
+
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
 			-moz-transition: none !important;
 			-webkit-transition: none !important;
@@ -905,7 +909,7 @@
 		}
 
 	header > p {
-		color: #aaa;
+		color: #000;
 	}
 
 /* Image */
